@@ -6,8 +6,8 @@
 *Last Updated:* [Date]
 
 ## Table of Contents
-1. [Introduction](#introduction)  
-2. [Prerequisites and Installation](#prerequisites-and-installation)  
+1. [Introduction](#Introduction)  
+2. [Software used in this tutorial](#Software used in this tutorial)  
 3. [Data Preparation](#data-preparation)  
 4. [Configuring the Bayesian Phylogenetic Analysis](#configuring-the-bayesian-phylogenetic-analysis)  
 5. [Running the Analysis](#running-the-analysis)  
@@ -31,7 +31,7 @@ Provide an overview of Bayesian phylogenetics, including:
 ---
 
 ## Software used in this tutorial
-### BEAST2 [https://www.beast2.org/]
+### [BEAST2](https://www.beast2.org/)
 This is the main software for performong the Bayesian analysis via MCMC. It takes as input a file in XML format. The XML file contains code to provide BEAST2 with the data, details of the models and parameters used, the operators for the MCMC, and it also tells BEAST what to save to the output files. 
 
 ###BEAUti
@@ -230,9 +230,18 @@ Open the **TreeAnnotator** app which comes with Beast2.
 
 ![](doc/treeannotator.png)
 
+* The burn in percentage is set to a default of 10. This is probably sufficient, but you should check in Tracer how much burn-in is required
+* For Target tree type, select MAP (CCD0). This type of summary tree has been shown to be better than others
+* For Node heights, median is often used.
+* For input tree file, choose the **tree log file** (filename something like crossandean-quechuan.trees). 
+* Choose an appropriate output file name, such as crossandean-quechuan_CCD0.tree
+* click run
 
+## Viewing the summary tree
 
+You can open the summary tree by going to the website [IcyTree](https://icytree.org/). Alterntaively, the summary tree can be viewed in FigTree. There are many options available to change the visualisation of the tree, such as colouring the branches or visuallising the range of possible dates for a node on the tree. To do the latter in IcyTree, click Style > node height error bars > height_95%HPD. 
 
+![](doc/icytree.png)
 
 
 
