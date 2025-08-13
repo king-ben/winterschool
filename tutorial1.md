@@ -1,19 +1,16 @@
 ---
+title: "Building Bayesian Language Phylogenies with BEAST2"
+author: "Benedict King"
+last_updated: [Date]
+---
 
-# Building Bayesian Language Phylogenies with BEAST2
+# {{ page.title }}
 
-*Author(s):* Benedict King  
-*Last Updated:* [Date]
+*Author(s):* {{ page.author }}  
+*Last Updated:* {{ page.last_updated }}
 
 ## Table of Contents
-1. [Introduction](#introduction)  
-2. [Software used in this tutorial](#Software used in this tutorial)  
-3. [Data Preparation](#data-preparation)  
-4. [Configuring the Bayesian Phylogenetic Analysis](#configuring-the-bayesian-phylogenetic-analysis)  
-5. [Running the Analysis](#running-the-analysis)  
-6. [Interpreting Results](#interpreting-results)  
-7. [Common Pitfalls & Tips](#common-pitfalls--tips)  
-8. [References & Further Reading](#references--further-reading)  
+1. [Introduction](#introduction)
 
 ---
 
