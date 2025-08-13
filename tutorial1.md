@@ -6,7 +6,7 @@
 *Last Updated:* [Date]
 
 ## Table of Contents
-1. [Introduction](##Introduction)  
+1. [Introduction](#introduction)  
 2. [Software used in this tutorial](#Software used in this tutorial)  
 3. [Data Preparation](#data-preparation)  
 4. [Configuring the Bayesian Phylogenetic Analysis](#configuring-the-bayesian-phylogenetic-analysis)  
@@ -27,16 +27,16 @@ In this tutorial we will build a phylogeny of the Quechuan language family. We s
 ### [BEAST2](https://www.beast2.org/)
 This is the main software for performong the Bayesian analysis via MCMC. It takes as input a file in XML format. The XML file contains code to provide BEAST2 with the data, details of the models and parameters used, the operators for the MCMC, and it also tells BEAST what to save to the output files. 
 
-###BEAUti
+### BEAUti
 This program comes packaged with BEAST2. BEAUti is a graphical user interface program which produces XML files, which can then be loaded into BEAST2 for analysis. 
 
-###Tracer
+### Tracer
 Tracer is a program for checking the output of BEAST2 analyses. It is used to summarise parameters values, and also to check if the analysis has run long enough.
 
-###Tree Annotator
+### Tree Annotator
 Another program that comes packaged with BEAST2. The output of a BEAST2 analysis is a sample of trees. TreeAnnotator takes this sample of trees and calculates a single summary tree. The branches of the annotated tree are labelled with key statistics, such as the support for that branch or the rate of evolution.
 
-###FigTree
+### FigTree
 FigTree is used to display the summary trees from Tree Annotator. There are a number of functions to choose the font of the language names, which statistics to show as branch labels, coloring the branches according to the rate of evolution, etc. Figtree is often used to make the figures that appear in publications.
 
 
