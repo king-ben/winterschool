@@ -1,13 +1,6 @@
----
-title: "Building Bayesian Language Phylogenies with BEAST2"
-author: "Benedict King"
-last_updated: [Date]
----
+# Building Bayesian Language Phylogenies with BEAST2
 
-# {{ page.title }}
-
-*Author(s):* {{ page.author }}  
-*Last Updated:* {{ page.last_updated }}
+*Author(s):* Benedict King  
 
 ## Table of Contents
 1. [Introduction](#introduction)
