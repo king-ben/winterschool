@@ -6,7 +6,7 @@
 *Last Updated:* [Date]
 
 ## Table of Contents
-1. [Introduction](#Introduction)  
+1. [Introduction](##Introduction)  
 2. [Software used in this tutorial](#Software used in this tutorial)  
 3. [Data Preparation](#data-preparation)  
 4. [Configuring the Bayesian Phylogenetic Analysis](#configuring-the-bayesian-phylogenetic-analysis)  
@@ -18,15 +18,8 @@
 ---
 
 ## Introduction
-Provide an overview of Bayesian phylogenetics, including:
-- What is phylogenetics and why Bayesian methods are useful.
-- Tools and software options (e.g., MrBayes, BEAST, PhyloBayes).
-- General goals of the tutorial (e.g., reconstructing a phylogenetic tree from a set of sequences).
+In this tutorial we will build a phylogeny of the Quechuan language family. We start with an alignment of cognate sets in **nexus** (.nex) format. 
 
-> **Key Concepts**  
-> - Bayesian statistics and posterior probability  
-> - Molecular clock models  
-> - Tree priors and substitution models  
 
 ---
 
