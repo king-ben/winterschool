@@ -4,6 +4,19 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
+2. [Software used in this tutorial](#software-used-in-this-tutorial)
+3. [Installing packages](#installing-packages)
+4. [Choose the correct template](#choose-the-correct-template)
+5. [Load the data](#load-the-data)
+6. [The site model tab](#the-site-model-tab)
+7. [The clock model tab](#the-clock-model-tab)
+8. [The priors tab](#the-priors-tab)
+9. [Calibrating the tree](#calibrating-the-tree)
+10. [The MCMC tab](#the-mcmc-tab)
+11. [Checking the progress of the analysis](#checking-the-progress-of-the-analysis)
+12. [Summary statistics](#summary-statistics)
+13. [Summary trees](#summary-trees)
+
 
 ---
 
