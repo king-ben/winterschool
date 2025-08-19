@@ -1,19 +1,22 @@
----
-
-# Bayesian Phylogeography with Beast2
+# Phylogeography with BEAST2
 
 *Author(s):* Benedict King  
-*Last Updated:* [Date]
 
 ## Table of Contents
-1. [Introduction](#introduction)  
-2. [Installing packages](#installing-packages)  
-3. [Data Preparation](#data-preparation)  
-4. [Configuring the Bayesian Phylogenetic Analysis](#configuring-the-bayesian-phylogenetic-analysis)  
-5. [Running the Analysis](#running-the-analysis)  
-6. [Interpreting Results](#interpreting-results)  
-7. [Common Pitfalls & Tips](#common-pitfalls--tips)  
-8. [References & Further Reading](#references--further-reading)  
+1. [Introduction](#introduction)
+2. [Software used in this tutorial](#software-used-in-this-tutorial)
+3. [Installing packages](#installing-packages)
+4. [Choose the correct template](#choose-the-correct-template)
+5. [Load the data](#load-the-data)
+6. [The site model tab](#the-site-model-tab)
+7. [The clock model tab](#the-clock-model-tab)
+8. [The priors tab](#the-priors-tab)
+9. [Calibrating the tree](#calibrating-the-tree)
+10. [The MCMC tab](#the-mcmc-tab)
+11. [Checking the progress of the analysis](#checking-the-progress-of-the-analysis)
+12. [Summary statistics](#summary-statistics)
+13. [Summary trees](#summary-trees)
+
 
 ---
 
