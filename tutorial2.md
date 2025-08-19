@@ -21,7 +21,7 @@
 ---
 
 ## Introduction
-In this tutorial, we will continue our analysis of the Quechuan language family. We will add an additional variable into the data, which is the locations of the languages in Latitude and Longitude. The location is analysed for every node of the phylogeny. A key advantage of this analysis is that it is performed at the same time as the tree reconstruction. Any uncertainty in the tree reconstruction is therefore accounted for in the analysis.
+In this tutorial, we will continue our analysis of the Quechuan language family. We will add an additional variable into the data, which is the locations of the languages in Latitude and Longitude. The location is reconstructed for every node of the phylogeny using a model of migration. This phylogeographical analysis is performed at the same time as the tree reconstruction. Any uncertainty in the tree reconstruction is therefore accounted for in the analysis.
 
 ---
 
@@ -130,13 +130,39 @@ lang_locs <- lang_locs[lang_locs$ID %in% t[[1]]@phylo$tip.label,]
 ```
 
 The object *t* is a list of all the trees in the postburnin sample. These can be accessed individually e.g. ```t[[1]]``` accesses the first tree, ```t[[2000]]``` accesses the 2000th etc.
-There is a function *tree_on_map* in the functions.R file which was just loaded. This plots the tree on the map, to visualise the spread of languages in space.
+There is a function ```tree_on_map``` in the functions.R file which was just loaded. This plots the tree on the map, to visualise the spread of languages in space.
 
 ```r
 # plot the first tree
 tree_on_map(t[[1]], lang_locs)
 
 ```
-![](doc/treeonmap.jpg)
+![](doc/treeonmap.jpeg)
+
+Plot some of the other trees from the sample and have a look at how variable the results are. Are all of the results realistic and reasonable?
+
+# Plotting ancestral locations as a heatmap
+
+You can see from plotting trees from the posterior that there is uncertainty in the estimation of the location of each node of the tree. A good way of visualising these ancestral location estimates is by plotting a **heat map**. The function ```ancestor_heatmap```, also in the functions.R file that you loaded, will do this for a specified group of languages. First let's plot the heatmap for the root of the tree, i.e. Proto-Quechuan. To do this we set up a vector of language names. The function will then find the common ancestor of these languages in all the trees in the posterior sample and make a heatmap of the ancestral location estimate.
+
+The function ```ancestral_locations``` extracts the ancestral location from each tree and saves them in a table. Be careful with the locationannotation option. Depending on what you called the location trait when you set up the beast xml in BEAUti, it might not be the same. You can check what the annotations are called by typing ```names(t[[1]]@data)``` into the console.
+
+```r
+# make a vector of language names. In this case, all of the languages in the tree
+root <- c("Apurimac", "Cuzco", "Maragua", "Pocona", "Curva", "Puno", "Taquile", "Santiagueno", "Arma", "Atalla", "Ayacucho", "Chachapoyas", "Lamas", "Azuay", "Imbabura", "Troje", "Bobonaza", "Napo", "Serena", "Pastaza", "Putumayo", "Apuri", "Huangascar", "SanPedro", "CacraHongos", "LinchaTana", "Chacpar", "Yanac", "Huallaga", "HuarazHuailas", "Raimondi", "Wari", "Pacaraos", "Tarma", "Chetilla", "Inkawasi", "Huanca", "Jauja", "Laraos") 
+
+# calculate ancestral locations
+ancestral_locations <- ancestral_locations(t, clade=root, locationannotation="locationslocation")
+
+# make the heat map
+ancestor_heatmap(lang_locs, ancestral_locations)
+
+```
+
+![](doc/heatmap.jpeg)
+
+
+
+
 
 
