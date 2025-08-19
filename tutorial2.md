@@ -1,6 +1,5 @@
 # Phylogeography with BEAST2
 
-*Author(s):* Benedict King  
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -18,7 +17,7 @@
 ---
 
 ## Introduction
-In this tutorial, we will continue our analysis of the Quechuan language family. We will add an additional variable into the data, which is the locations of the languages in Latitude and Longitude. The location is reconstructed for every node of the phylogeny using a model of migration. This phylogeographical analysis is performed at the same time as the tree reconstruction. Any uncertainty in the tree reconstruction is therefore accounted for in the analysis.
+In this tutorial, we will continue our analysis of the Quechuan language family. We will add an additional variable into the data, which is the locations of the languages in Latitude and Longitude. The location is reconstructed for every node of the phylogeny using a model of migration. This phylogeographical analysis is performed at the same time as the tree reconstruction, and any uncertainty in the tree reconstruction is therefore accounted for in the analysis.
 
 ---
 
@@ -48,10 +47,14 @@ Repeat the process for Longitude.
 
 ## Running the analysis
 
-The location data is analysed using a spherical diffusion model. For more details, see [the paper](https://peerj.com/articles/2406/). This is an update from diffusion models which analysed location as diffusion on a plane. The spherical diffusion model is much more accurate when the area under analysis is large. Analysis of location assuming diffusion on a plane is distorted by the projection used, for example the mercator projection. For smaller areas, the spherical diffusion model gives simlar results to diffusion on a plane.
+The location data is analysed using a spherical diffusion model. For more details, see [the paper](https://peerj.com/articles/2406/). This is an update from diffusion models which analysed location as diffusion on a plane. The spherical diffusion model is much more accurate when the area under analysis is large. Analysis of location assuming diffusion on a plane is distorted by whatever map projection is used, for example the Mercator projection. For smaller areas, the spherical diffusion model gives similar results to diffusion on a plane.
 
 
-The main parameter for the spherical diffusion model is *precision*. This determines how much diffusion away from the parent location is possible. Larger precision means stronger concentration around the parent. This value can be changed in BEAUti in the substitution model tab. Click on location under partitions and click the small button to the right of Subst Model. For now we will keep the value at the default of 100.
+The main parameter for the spherical diffusion model is *precision*. This determines the speed of diffusion away from the ancestral location. Larger precision means less diffusion away from the ancestor. This value can be changed in BEAUti in the substitution model tab. Click on location under partitions and click the small button to the right of Subst Model. For now we will keep the value at the default of 100, but we will change this value later.
+
+Beast is a program full of bugs. One of these is that when the location data is added to the analysis, the Mutation Rate parameter in the lexical partition suddenly becomes an estimated parameter i.e. it has an operator and it's value can change. However, it is not possible to simultaneously estimate this and the clock rate, and leaving mutation rate as an esimated will lead to issues with convergence. In the Site Model tab, click on the lexical partition (quechua modern), and untick the estimate box next to Mutation Rate.
+
+![](doc/mutationrateestimate.png)
 
 In the MCMC tab set the length of the analysis to 5 Million, Then save the file and run it in beast as for tutorial 1.
 
@@ -59,7 +62,7 @@ The output of the beast analysis is a log file of the parameter estimates and a 
 
 ## Checking the analysis in Tracer
 
-I will levae it up to you to check the analysis in Tracer and determine if it has run long enough. You might find that this analysis takes longer to settle than for tutorial 1, and you might need a longer burn-in than the default value of 10%.
+I will leave it up to you to check the analysis in Tracer and determine if it has run long enough. You might find that this analysis takes longer to settle than for tutorial 1, and you might need a longer burn-in than the default value of 10%.
 
 ## Remove burn-in using logCombiner
 As a first step, remove the burn-in from the tree file. This makes the post-processing of results a bit easier, because we won't have to worry about mistakenly using trees from the burn-in later when plotting. Open the program **logCombiner**, which comes in the same set of programs as beast2, BEAUti and treeAnnotator. 
@@ -72,16 +75,16 @@ As a first step, remove the burn-in from the tree file. This makes the post-proc
 
 ## Setting up RStudio
 
-It is very common to use R code to process the results of a Bayesian phylogenetic analysis. Open up Rstudio.
+It is very common to use R code to process the results of a Bayesian phylogenetic analysis. Open up RStudio.
 Make a new script file by clicking File > New File > R Script. Save this script with a sensible filename and and in a sensible location (probably the same folder with the results of the beast2 analysis).
 
 The Rstudio window is divided into 4 sections.
 
 ![](doc/rstudio.png)
 
-At the top left is the **script file**. We will gradually fill this with code during the tutorial. At the bottom left is the **environment**. This is a list of all the object in memory, which will start appearing as we start to run R code to make tables, lists and plots. At the top right is the **console**. This is where the R code gets executed. You can also type code directly into the console. The bottom right is where plots that we make are displayed.
+At the top left is the **script file**. We will gradually fill this with code during the tutorial. At the bottom left is the **environment**. This is a list of all the objects in memory, which will start appearing as we start to run R code to make tables, lists and plots. At the top right is the **console**. This is where the R code gets executed. You can also type code directly into the console. The bottom right is where plots that we make are displayed.
 
-Let's first install the packages we need. Cooy and paste the following code into the console.
+Let's first install the packages we need. Copy and paste the following code into the console.
 
 ```r
 # Install packages
