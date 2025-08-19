@@ -4,18 +4,15 @@
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Software used in this tutorial](#software-used-in-this-tutorial)
-3. [Installing packages](#installing-packages)
-4. [Choose the correct template](#choose-the-correct-template)
-5. [Load the data](#load-the-data)
-6. [The site model tab](#the-site-model-tab)
-7. [The clock model tab](#the-clock-model-tab)
-8. [The priors tab](#the-priors-tab)
-9. [Calibrating the tree](#calibrating-the-tree)
-10. [The MCMC tab](#the-mcmc-tab)
-11. [Checking the progress of the analysis](#checking-the-progress-of-the-analysis)
-12. [Summary statistics](#summary-statistics)
-13. [Summary trees](#summary-trees)
+2. [Installing packages](#installing-packages)
+3. [Load the location data](#load-the-location-data)
+4. [Running the analysis](#running-the-analysis)
+5. [Checking the analysis in Tracer](#checking-the-analysis-in-tracer)
+6. [Remove burn-in using logCombiner](#remove-burn-in-using-logcombiner)
+7. [Setting up RStudio](#setting-up-rstudio)
+8. [Plotting the trees on the map](#plotting-the-trees-on-the-map)
+9. [Plotting ancestral locations as a heatmap](#plotting-ancestral-locations-as-a-heatmap)
+10. [Extra analyses](#extra-analyses)
 
 
 ---
@@ -58,16 +55,13 @@ The main parameter for the spherical diffusion model is *precision*. This determ
 
 In the MCMC tab set the length of the analysis to 5 Million, Then save the file and run it in beast as for tutorial 1.
 
+The output of the beast analysis is a log file of the parameter estimates and a tree file. The tree file is an *annotated nexus file*. It not only saves the tree, but includes node annotations. One of these annotations is the location. Each tree in the sample has a reconstructed location for every node in the tree. In other words, each tree in the sample represents an estimate of both the phylogenetic relationships of the languages but also their migration history. That's a lot of information! We need to summarise this information in a good way.
 
 ## Checking the analysis in Tracer
 
 I will levae it up to you to check the analysis in Tracer and determine if it has run long enough. You might find that this analysis takes longer to settle than for tutorial 1, and you might need a longer burn-in than the default value of 10%.
 
-# Displaying the results of the analysis
-
-The output of the beast analysis is a log file of the parameter estimates and a tree file. The tree file is an *annotated nexus file*. It not only saves the tree, but includes node annotations. One of these annotations is the location. Each tree in the sample has a reconstructed location for every node in the tree. In other words, each tree in the sample represents an estimate of both the phylogenetic relationships of the languages but also their migration history. That's a lot of information! We need to summarise this information in a good way.
-
-## remove burn-in using logCombiner
+## Remove burn-in using logCombiner
 As a first step, remove the burn-in from the tree file. This makes the post-processing of results a bit easier, because we won't have to worry about mistakenly using trees from the burn-in later when plotting. Open the program **logCombiner**, which comes in the same set of programs as beast2, BEAUti and treeAnnotator. 
 
 * Under file type, select tree files
@@ -161,7 +155,13 @@ ancestor_heatmap(lang_locs, ancestral_locations)
 
 ![](doc/heatmap.jpeg)
 
+# Extra analyses
 
+Now that we have run through a complete analysis, try the following tasks.
+
+* Plot heat maps for other nodes of the phylogeny. Can you make heat maps for the ancestors of Southern Quechua, Ecuadoriano, Chachapoyas, Central Quechua, and Yauyos?
+* Go back to BEAUti and run an analysis with a relaxed clock for location
+* Try alternative values for the precision parameter. Remember that higher values constrain the amount of movement more.
 
 
 
