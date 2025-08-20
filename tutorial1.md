@@ -111,7 +111,7 @@ For now we can leave all the parameters on their default values. Notice the **es
 
 ## The clock model tab
 
-The default is the strict clock, which is usually a very unrealistic model for language evolution. From the drop-down menu select the Optimised relaxed clock. You will notice that there is box for the **Clock rate**, which is by default set at 1.0. The clock rate determines the average rate of evolution (number of cognate changed per year). Next to this is the box marked **estimate**, but it is greyed out and cannot be ticked. This is because we need the tree to be **calibrated** before we can estimate the clock rate.
+Start by analysing the data using a **Strict Clock**, the simplest model which assumes all branches have the same rate. You will notice that there is box for the **Clock rate**, which is by default set at 1.0. The clock rate determines the average rate of evolution (number of cognate changed per year). Next to this is the box marked **estimate**, but it is greyed out and cannot be ticked. This is because we need the tree to be **calibrated** before we can estimate the clock rate.
 
 ---
 
@@ -132,6 +132,7 @@ Let's try to change some of these priors to something different from the default
 
 *   Set the covarion alpha prior to a Uniform with a lower bound of 0 and an upper bound of 5.0
 *   Set the birth rate prior to an exponential distribution with a mean of 0.5
+*   Set the clock rate prior to a Uniform distribution with a lower bound of 0 and an upper bound of 2.0
 
 ---
 
@@ -159,9 +160,9 @@ You now have two columns of languages, the right column is the languages that de
 
 ## The MCMC tab
 
-This tab contains some options for running the analysis. One of the options is **Chain Length**. For now leave it on the default value of 10 Million. 
+This tab contains some options for running the analysis. One of the options is **Chain Length**. Set this to 5 Million. 
 
-We are now ready to export the BEAST2 XML file and run the analysis. Click File > Save and choose a suitable file name and location to save the XML file (something like quechuan.xml will do).
+We are now ready to export the BEAST2 XML file and run the analysis. Click File > Save and choose a suitable file name and location to save the XML file (something like quechuan.xml will do). We will be running multiple analyses today, so it is a good idea to put each analysis in a separate folder with a sensible name.
 
 
 ---
@@ -238,6 +239,59 @@ Open the **TreeAnnotator** app which comes with Beast2.
 You can open the summary tree by going to the website [IcyTree](https://icytree.org/). Alterntaively, the summary tree can be viewed in FigTree. There are many options available to change the visualisation of the tree, such as colouring the branches or visuallising the range of possible dates for a node on the tree. To do the latter in IcyTree, click Style > node height error bars > height_95%HPD. 
 
 ![](doc/icytree.png)
+
+
+# Further anlyses
+
+We have now performed a simple phylogenetic analysis in beast2 and obtained a tree. Now we will try some more advanced analyses.
+
+## Relaxed Clock
+
+The strict clock is usually an unrealistic model for language evolution. The relaxed clock, in which some variation in the rate of language evolution between branches is allowed, is usually more realistic.
+
+Reopen the xml file in BEAUti (if you closed BEAUti, File > Load). In the clock model tab, change strict clock to Optimised relaxed clock. Three parameters appear in the Priiors panel: the clock mean, sigma and the individual branch rates. The default priors are probably fine for now. Save a new xml (File > Save As) in a new folder, and run the analysis as before.
+
+* Check for convergence in Tracer. Adjust the operators or run the analysis longer, following the instructions above, if necessary
+* The Coefficient of Variation, a statistic calculated during the run, is a good measure of the amount of variation in rate between branches. If this overlaps with 0, then there is evidence for a strict clock. If the coefficient of variation doesn't overlap with 0, it is evidence for a relaxed clock. What about your own analysis, is there evidence for a relaxed clock?
+* Make a summary tree for the relaxed clock analysis, are there any major differences with the strict clock analysis?
+
+## Alternative calibrations
+
+So far we have used a Normal distribution centred on 2000BP on the root to time-calibrate the tree. This was just a guess. It would be preferable to have calibrations based on evidence. One possibility is to apply a calibration to Argentine Quechuan (Santiagueño). One hypothesis is that Quechuan speakers migrated to Argentina during the spanish colonial period (DeMarrais in Heggarty and Beresford-Jones 2012). We could therfore place a prior that Santiagueño split from its sister languages during this time. Beast has the option to specify priors on the parent node of the common ancestor, rather than the common ancestor itself. This is equivalent to saying "language X became an independent langauge at this time". This is very useful since we don't necessarily have to know what the sister group to language X actually is. This type of calibration is very useful in linguistic analyses.
+
+* In BEAUti, first delete the root calibration by clicking the (-) button.
+* Add a new MRCA prior with Santiagueno as the only taxon, you can name it just Santiagueno
+* To begin with, set a normal distribution prior with mean 300, sigma 100
+* Make sure you tick "Use Originate". This places the distribution on the parent node of Santiagueno, i.e. the point where it splits from the rest of the tree
+
+![](doc/Santiagueno.png)
+
+---
+
+When you look at the results in Tracer, you will probably see that the results are not good, with very poor ESS values. Take a look at the age of the node we just calibrated mrca.age(Santiagueno1.originate). 
+
+![](doc/Santiaguenotrace.png)
+
+It jumps between a very young age, and an age around 300 BP (which matches the calibration). Why is this? It is informative to have a look at the **joint marginal**, which shows correlation between parameters. Compare mrca.age(Santiagueno1.originate) with the birth rate.
+
+![](doc/jointmarginal.png)
+
+It's possible that the priors on the node age and the brith rate are interacting somehow. This is where we introduce an important conecept in Bayesian statistics: **sampling from the prior**. Sampling from the prior means running the analysis with no data, so that all parameters are sampled from their *joint* prior distribution. Some priors can interact with each other, which means that the parameter estimate when sampling from the prior might not match the prior specified in BEAUti. It is good to check the priors by sampling from the prior, especially for calibrations.
+
+To sample from the prior, tick the "Sample From Prior" option in the MCMC tab. Save the xml as a new file in a new folder and run it, check the results in Tracer.
+
+You will probably see that the issues with the node age and the birth rate persist. That means that the problem was with the priors, not the data. Some possible options to adjust the priors include:
+
+* Change the calibration prior. Try a lognormal prior with an offset, so younger ages are not allowed. For example a lognormal with offset 150, Mean 150 (tick the option "mean in real space").
+* Try a Uniform distribution for the whole Spanish colonial period
+* Try a more restrictive birth rate prior, e.g. an exponential distribution with a lower mean
+
+Why not work with the people next to you to try several of these options, they can also be combined. When you have an analysis that works well and gives good ESS values, have a look at the age of the root of the tree (Tree.t:tree.height). Is the estimate realistic for the whole of the Quechiuna family? What about the summary tree, are all the divergences realistic?
+
+---
+
+As a final challenge, try to assemble as much information as possible that could be used to calibrate the tree. Use google, chatgpt, your own knowledge, any information source you can think of, to come up with some alternative time calibration strategies. The more the better!
+
 
 
 

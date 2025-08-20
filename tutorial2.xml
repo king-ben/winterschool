@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='BinaryCovarion' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.base.evolution.alignment:beast.pkgmgmt:beast.base.core:beast.base.inference:beast.base.evolution.tree.coalescent:beast.pkgmgmt:beast.base.core:beast.base.inference.util:beast.evolution.nuc:beast.base.evolution.operator:beast.base.inference.operator:beast.base.evolution.sitemodel:beast.base.evolution.substitutionmodel:beast.base.evolution.likelihood" required="BEAST.base v2.7.8:BEASTLabs v2.0.3:GEO_SPHERE v1.4.2" version="2.7">
+
+    <data
+id="quechua_modern"
+spec="Alignment"
+dataType="standard"
+name="alignment">
+        <sequence id="seq_Apuri" spec="Sequence" taxon="Apuri" totalcount="2" value="011000110110000101110011100111100111101101100110000000??????10001010101111100010000100010100010111????1111101?11010000110001010100100101???????????0101100101001101001011100110100111010000101010010001001???001001100010111111000100111001101010101101000110010?????11010011100011110000001?0000000101010111011001101001000010000"/>
+        <sequence id="seq_Apurimac" spec="Sequence" taxon="Apurimac" totalcount="2" value="01100011011100110111001110010110011110111110010001000010000010001010111110101010001111000100011101100110111??11100010110100101000001100100001100000010110010101111100101110011010011101000100101001????00101000100110001011011110010011101011011??01??1100010010?????1101001110011110110000110000000101110111011001101101000010101"/>
+        <sequence id="seq_Arma" spec="Sequence" taxon="Arma" totalcount="2" value="01??00110110000101?10011100101?00111101101100110000000??????100010101011111000100001001001000101011???10111??111000110101001010101000101???????????0101100101001101001011100110100111010001001??0010001001???001001?00010110111000100111010100110101101000110010?????110100111001011???????110000000101010111011001100101000010001"/>
+        <sequence id="seq_Atalla" spec="Sequence" taxon="Atalla" totalcount="2" value="011000110100100101110011100101100111101101100110000000??????10????1010111010001000010010010001010110101011101111000100101001010000010101000000000100101100101001101001011100110100111010001001010010001001???0010011000101101110001001110001001?0101??1000110010100001101001110001110100000110000000101010111011001100101000010000"/>
+        <sequence id="seq_Ayacucho" spec="Sequence" taxon="Ayacucho" totalcount="2" value="011000110110001101110011100101100111101101100110000000??????1000101010111010001000010010010001010110011011101111000110101001010001010101000100000000101100101001101001011100110100111010001001010010001001010001001100010110111000100111010100110101101000110010?????1101001110001110100000110000000101010111011001100101000010001"/>
+        <sequence id="seq_Azuay" spec="Sequence" taxon="Azuay" totalcount="2" value="01101001011000010111001110010110011110110101010000000110000010000010101111000??????11000001011010111000111101111000010?10001010010101001000010000000101100101001101001011100110100111001001001011010001010010001001100100110111000100111110000110101101110010010001001101001110010110000000110000000101010111011001100100001000000"/>
+        <sequence id="seq_Bobonaza" spec="Sequence" taxon="Bobonaza" totalcount="2" value="01100011011000011011001110010110011101110100110000000110000010000010??11110000000001?????????101011???0111101111100000?100010100101010010000100000001011001010011010010111001101001110010000010100100010000100001011?????110111000100111010000111001??1????10010011001101001111000110000000110000001001010110111001100100010000000"/>
+        <sequence id="seq_CacraHongos" spec="Sequence" taxon="CacraHongos" totalcount="2" value="011001010110000101110011010011100111101101100110000000??????10????10101111100010000100010100010111????0111101111010000110001011100000101???????????0101100?01001101001011100110100111000101001010010001001???001001100010111111000100111001101010101101000110010?????11010011100011110000001?0000000101010111011001101001000010000"/>
+        <sequence id="seq_Chachapoyas" spec="Sequence" taxon="Chachapoyas" totalcount="2" value="0110???10110000101110011100101100111101101100110000000??????101000101011101000100001001001000101011???1011110111010010110001010100101001???????????01010011????1101010011100110100111010001001010010001001010001001100100110111000100111010000110101??1000110010010001101001110010110000000110000000101010111011001100101000000100"/>
+        <sequence id="seq_Chacpar" spec="Sequence" taxon="Chacpar" totalcount="2" value="010101001100010101110011010011110011??1101100100000100000100100100101011100100000101001001000101101???01111101110001001100010101000001010100000000010010101010011???0011110011100011100100010101001????0011000000111?????1101110000101110010001?0101101000110010?????11001011100011101000001100100000010101110?1001101001000??????"/>
+        <sequence id="seq_Chetilla" spec="Sequence" taxon="Chetilla" totalcount="2" value="010101001110000101111001010101100111101101010100001000001000100100101011100101000001001001000101011???0111101111010100110001010100000101???????????01010101010011010010110101101001111000????1100100001???010100001100010110110000100111000101010101??1001001010?????1101001110010111000000110000000101010111011001101001000001000"/>
+        <sequence id="seq_Curva" spec="Sequence" taxon="Curva" totalcount="2" value="0110001101100001011100111001011001111011111001000000101000001000101010111000100100011000010001010110011011101111000100110001010000011001001000000000101100101001101001011001110100111010001001010010010001010001001100010110111000100111010000110101101100010010100001100101110010110100000110100000000110111011001100101000000100"/>
+        <sequence id="seq_Cuzco" spec="Sequence" taxon="Cuzco" totalcount="2" value="0110001101010001011100111001011001111011111001000100001000001000101010111000101000011000010001010110011011101111000100101001010000011001000001000000101100101001101001011100110100111010001001010010010001010001001100010110111000100111010000110101011100010010010001101001110010110001000110000000100110111011001100101000000100"/>
+        <sequence id="seq_Huallaga" spec="Sequence" taxon="Huallaga" totalcount="2" value="010101001110000101110011011001110011??1101100100000100010000100100101011100101000001001001000101101???011111011101000011000101010000010101000000000100101010100111000101110011100011100010010101001????0011000010011000101101110000101110010010?0101101000110010?????11001011100011110000001100001000010101110?1001101010000000000"/>
+        <sequence id="seq_Huanca" spec="Sequence" taxon="Huanca" totalcount="2" value="01100100111000010111001101001110011110110110011000000001000010????101011111001000001001101000101011???01111011110100001100010101000001010000001000001011001010011010001111001101001110001001011100100010010000010011000101101110001001?1001101010101101001110010?????11100011101011101000001100000100010??111011001110000100001010"/>
+        <sequence id="seq_Huangascar" spec="Sequence" taxon="Huangascar" totalcount="2" value="011000110110000101110011100111100111101101100110000000??????10001010101111100010000100010100010111????1111101111010000110001010100100101???????????0101100101001101001011100110100111010000101010010001001???001001100010111111000100111001101010101??1000110010?????11010011100011110000001?0000000101010111011001101001000010000"/>
+        <sequence id="seq_HuarazHuailas" spec="Sequence" taxon="HuarazHuailas" totalcount="2" value="010101001110000101110011010011110011101101010100001100??????10010010101110100100000100100100010?101???0111110111010000110001010100000101???????????10010101010011100???1110011101011100110000110001????001100001001100001110111??????1110001001?0101101000110010?????110010?11000111100000011?????????10101110?1001101001000??????"/>
+        <sequence id="seq_Imbabura" spec="Sequence" taxon="Imbabura" totalcount="2" value="01100011011000010111001010010110011110110100110000000110000011000010101111000??????1000000100101011???0111101111000100?1000101001010100?000010000000101100?01001101001011100110100111001001001010010001001010001001100100110101000100111010000110101??1????10010001001101001110010110000000111000000001010111011100100100001000000"/>
+        <sequence id="seq_Inkawasi" spec="Sequence" taxon="Inkawasi" totalcount="2" value="010101001100000101110100011001110011101101100?00001000000001100001101011?0010100000100100????10101????0111101?110001001100010101000001010000000100001100101010011???01011010110100?11001000001100100001???010100001100010?10100001000?11000101010101101000101001?????1?00101110010111000000110000000101010111011011?01001000100000"/>
+        <sequence id="seq_Jauja" spec="Sequence" taxon="Jauja" totalcount="2" value="01100100111000010111001101001010011110110101011000000001000010????101011111001000001001101000101101???0111101111010000110001010100000101???????????010101010100110100011110011010011100010010111001????001???001001100010???1110001001?10011010101??101001110010?????11001011101011101000001100000100010??111011001110000000001010"/>
+        <sequence id="seq_Lamas" spec="Sequence" taxon="Lamas" totalcount="2" value="011000110110000101110011100101100111101101100110000000??????100010101011110000100001001001000101011???1011101111010010110001010100101001000000001000101001101001101001011100110100111010001001010010001001010001001100100110111000100111000100110101??1000110010010001101001110010110000000110000000101010111011001100101000000100"/>
+        <sequence id="seq_Laraos" spec="Sequence" taxon="Laraos" totalcount="2" value="01100101011000010111001101001110101110110110011000000000100010????10101110100010000100010100010101????0111101111010000110001010100000011000000100000101100101001101000111100110100111000100101100010001001????????1100010110111000100111010000110101101000110010?????1100101110010110000100110000010001010111011001101001000010000"/>
+        <sequence id="seq_LinchaTana" spec="Sequence" taxon="LinchaTana" totalcount="2" value="011000110110000101110011010111100111101101100110000000??????10????10101111100010000100010100010111????011110111101000011000101??????0101???????????0101100101001101001011100110100111000101001010010001001???00100?100010111111000100111001101010101101000110010?????11010011100011110000001?0000000101010111011001101001000010000"/>
+        <sequence id="seq_Maragua" spec="Sequence" taxon="Maragua" totalcount="2" value="011000110110000101110000100101100111101111100100100000100000100010101011100010100001?????10001010110011011101111000100101001010000011001000001000000101100101001101001011100110100111????000110100100100010100010011001001101010001001110100001?0101011100010010010001100011110010110100000110000000101010111011001100101000000100"/>
+        <sequence id="seq_Napo" spec="Sequence" taxon="Napo" totalcount="2" value="01100011011000011011001110010110011101110100110000000110000010000010??11110000000001?????????101011???0111101111100000?100010100101010010000100000001011001010011010010111001101001110010000010100100010000100001011?????110111000100111010000111001??1100010010011001101001111000110000000110000001001010110111001100100010000000"/>
+        <sequence id="seq_Pacaraos" spec="Sequence" taxon="Pacaraos" totalcount="2" value="01100100111000010111001101001111001110110101011000000000100010????10101110100100000100001100010101????011110111101000011000101010000???1???????????100101011000111000111110011000111100011010110001??????????0010011?????1101110110011110010010?0110??1000101110?????11001011100011110000001100000001010101110?1001101001100001000"/>
+        <sequence id="seq_Pastaza" spec="Sequence" taxon="Pastaza" totalcount="2" value="0110001101100001011?001110010110011110110100110000000010000010001011??11110000100001?????????1010110001011101?11001010?1100101001000100100001000000010110010110110100101110011????111001001001010010100000011000101100100110111000100111010000111001??1110010010010001101001111010110000010110000001001010111011001100101000000100"/>
+        <sequence id="seq_Pocona" spec="Sequence" taxon="Pocona" totalcount="2" value="011000110110000101110000100101100111101111100100100000100000100010101011100010100001?????10001010110011011101111000010100011010000011001100000000000101100101001101001011100110100111????010010100100100010100010011001001101010001001110100001?0101011100010010010001100011110010110100000110000001001010111011001100101000000100"/>
+        <sequence id="seq_Puno" spec="Sequence" taxon="Puno" totalcount="2" value="011000110110000101110001100101100111101111100100000000100000100010101011100010010001100001000101011001101110111100010011100101000001100100100000000010110010100110100101100111010011101000100101001????00101000100110001011011100010011101000011010101110001001000010110100111001011???????110000000100110111011001100101000000100"/>
+        <sequence id="seq_Putumayo" spec="Sequence" taxon="Putumayo" totalcount="2" value="011000110110000101110011100101100111101101???1????????10000010000010101110010??????1?????????101011???011?101111010100?100010100100010010000000000101011001010011001010111001101001110010????10110100010000100001011?????110011000100111010000110101??1010010010010001101001111010110100000110000001101010111011001100101000??????"/>
+        <sequence id="seq_Raimondi" spec="Sequence" taxon="Raimondi" totalcount="2" value="01010100111000010111001101001111001110110110010000010000001010010010101110100100000100100100010?101???011111011101000011000101??????0101???????????10??0101010011100???1110011101011100110000110001????001100000011100001110111??????1110001001?0101101000110010?????110010?11000111100000011?????????10101110?1001101001000??????"/>
+        <sequence id="seq_SanPedro" spec="Sequence" taxon="SanPedro" totalcount="2" value="011000110110000101110011100111100111101101100110000000??????10001010101111100010000100010100010111????0111101111010000110001010100000101???????????0101100101001101001011100110100111010000101010010001001???001001100010111111000100111001101010101??1000110010?????11010011100011110000001?0000000101010111011001101001000010000"/>
+        <sequence id="seq_Santiagueno" spec="Sequence" taxon="Santiagueno" totalcount="2" value="011000110110000101110011100101100111101011100100000000100000100010101011110000100001?????1000101011001101110111101000011100101??????1001000000000010101100?01001101001011100110100111010001001010011000001010001001100100110111000100111010000110101101101010010010001100001110010110000001110000001001001111011001100101000000100"/>
+        <sequence id="seq_Serena" spec="Sequence" taxon="Serena" totalcount="2" value="011000110110000101110011100101100111011101001100100000100000100000101011110000000001?????0010101011???0111101111000010?11001010010101001000010000000101100101001101001011100110100111001000001010010001000010000101110000110111000100111010000111001??1100010010011001101001111000110000000110000001001010111011001100100010000000"/>
+        <sequence id="seq_Taquile" spec="Sequence" taxon="Taquile" totalcount="2" value="0110001101100001011100111001011001111011111001000000001000001000101010111000101000011000010001010110011011101111000010111001010000011001???????????0101100101001101001011001110100111010001001010010010001010001001100010110111000100111010000110101101100010010000011101001110010110100000110000000010110111011001100101000000100"/>
+        <sequence id="seq_Tarma" spec="Sequence" taxon="Tarma" totalcount="2" value="01100100111000010111001101001111001110110101011000000000100010????101011101001000001?????1000101100???011110111101000011000110010000010101000000000100101010100111000011110011001011100010010110001????001???001001101000111111001000111001101010101101000110010?????11001011100101110000001100010001010101110?1001101001000000010"/>
+        <sequence id="seq_Troje" spec="Sequence" taxon="Troje" totalcount="2" value="011000110110000101110011100101100111101101001101000000100000100000101011110000001001?????1000101011???0111101111000100?00101010010101001000010000000101100101001101001011100110100111001001001010010001100010011001100100110111000100111010000110101??1010010010001001101001110010110000000110000000101010111011001100100001000000"/>
+        <sequence id="seq_Wari" spec="Sequence" taxon="Wari" totalcount="2" value="01010100111000010111001101001111001110110110010000010000001010010010101110100100000100100100010?101???011111011101000011000101??????0101???????????10010101010011100???1110011101011100110000110001????001100000011100001110111??????1110001011?0101101000110010?????110010?11000111100010011?????????10101110?1001101001000??????"/>
+        <sequence id="seq_Yanac" spec="Sequence" taxon="Yanac" totalcount="2" value="010101001110000101110011010011110011101101100100001000000100100100??101110100??????1001001000101101???01111101110001001100010101000001010100000000010010101010011???0011110011001011100010010101001????0011001000011000101101110000101110010010?0101??1000101010?????1100101110010110100000110000010001010111011001101001000??????"/>
+        <userDataType id="StandardData.0" spec="beast.base.evolution.datatype.StandardData" ambiguities="" nrOfStates="2">
+            <charstatelabels id="UserDataType.0" spec="beast.base.evolution.datatype.UserDataType" characterName="_ascertainment" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.1" spec="beast.base.evolution.datatype.UserDataType" characterName="ash" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.2" spec="beast.base.evolution.datatype.UserDataType" characterName="back" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.3" spec="beast.base.evolution.datatype.UserDataType" characterName="back" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.4" spec="beast.base.evolution.datatype.UserDataType" characterName="be_sick" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.5" spec="beast.base.evolution.datatype.UserDataType" characterName="be_sick" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.6" spec="beast.base.evolution.datatype.UserDataType" characterName="be_sick" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.7" spec="beast.base.evolution.datatype.UserDataType" characterName="belly_stomach" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.8" spec="beast.base.evolution.datatype.UserDataType" characterName="belly_stomach" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.9" spec="beast.base.evolution.datatype.UserDataType" characterName="big" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.10" spec="beast.base.evolution.datatype.UserDataType" characterName="bird" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.11" spec="beast.base.evolution.datatype.UserDataType" characterName="bird" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.12" spec="beast.base.evolution.datatype.UserDataType" characterName="bird" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.13" spec="beast.base.evolution.datatype.UserDataType" characterName="bird" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.14" spec="beast.base.evolution.datatype.UserDataType" characterName="bird" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.15" spec="beast.base.evolution.datatype.UserDataType" characterName="black" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.16" spec="beast.base.evolution.datatype.UserDataType" characterName="blood" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.17" spec="beast.base.evolution.datatype.UserDataType" characterName="blood" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.18" spec="beast.base.evolution.datatype.UserDataType" characterName="bone" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.19" spec="beast.base.evolution.datatype.UserDataType" characterName="bread" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.20" spec="beast.base.evolution.datatype.UserDataType" characterName="brother_mans" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.21" spec="beast.base.evolution.datatype.UserDataType" characterName="brother_mans" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.22" spec="beast.base.evolution.datatype.UserDataType" characterName="brother_mans" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.23" spec="beast.base.evolution.datatype.UserDataType" characterName="brother_womans" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.24" spec="beast.base.evolution.datatype.UserDataType" characterName="cloud" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.25" spec="beast.base.evolution.datatype.UserDataType" characterName="cloud" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.26" spec="beast.base.evolution.datatype.UserDataType" characterName="cold" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.27" spec="beast.base.evolution.datatype.UserDataType" characterName="cold" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.28" spec="beast.base.evolution.datatype.UserDataType" characterName="cold" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.29" spec="beast.base.evolution.datatype.UserDataType" characterName="come_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.30" spec="beast.base.evolution.datatype.UserDataType" characterName="cry_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.31" spec="beast.base.evolution.datatype.UserDataType" characterName="day" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.32" spec="beast.base.evolution.datatype.UserDataType" characterName="day" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.33" spec="beast.base.evolution.datatype.UserDataType" characterName="day" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.34" spec="beast.base.evolution.datatype.UserDataType" characterName="die_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.35" spec="beast.base.evolution.datatype.UserDataType" characterName="dog" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.36" spec="beast.base.evolution.datatype.UserDataType" characterName="drink_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.37" spec="beast.base.evolution.datatype.UserDataType" characterName="drink_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.38" spec="beast.base.evolution.datatype.UserDataType" characterName="dry" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.39" spec="beast.base.evolution.datatype.UserDataType" characterName="ear" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.40" spec="beast.base.evolution.datatype.UserDataType" characterName="ear" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.41" spec="beast.base.evolution.datatype.UserDataType" characterName="eat_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.42" spec="beast.base.evolution.datatype.UserDataType" characterName="egg" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.43" spec="beast.base.evolution.datatype.UserDataType" characterName="egg" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.44" spec="beast.base.evolution.datatype.UserDataType" characterName="egg" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.45" spec="beast.base.evolution.datatype.UserDataType" characterName="eight" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.46" spec="beast.base.evolution.datatype.UserDataType" characterName="elbow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.47" spec="beast.base.evolution.datatype.UserDataType" characterName="elbow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.48" spec="beast.base.evolution.datatype.UserDataType" characterName="elbow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.49" spec="beast.base.evolution.datatype.UserDataType" characterName="elbow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.50" spec="beast.base.evolution.datatype.UserDataType" characterName="elbow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.51" spec="beast.base.evolution.datatype.UserDataType" characterName="elbow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.52" spec="beast.base.evolution.datatype.UserDataType" characterName="elbow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.53" spec="beast.base.evolution.datatype.UserDataType" characterName="elbow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.54" spec="beast.base.evolution.datatype.UserDataType" characterName="empty" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.55" spec="beast.base.evolution.datatype.UserDataType" characterName="empty" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.56" spec="beast.base.evolution.datatype.UserDataType" characterName="empty" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.57" spec="beast.base.evolution.datatype.UserDataType" characterName="empty" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.58" spec="beast.base.evolution.datatype.UserDataType" characterName="empty" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.59" spec="beast.base.evolution.datatype.UserDataType" characterName="empty" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.60" spec="beast.base.evolution.datatype.UserDataType" characterName="eye" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.61" spec="beast.base.evolution.datatype.UserDataType" characterName="eye" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.62" spec="beast.base.evolution.datatype.UserDataType" characterName="face" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.63" spec="beast.base.evolution.datatype.UserDataType" characterName="face" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.64" spec="beast.base.evolution.datatype.UserDataType" characterName="face" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.65" spec="beast.base.evolution.datatype.UserDataType" characterName="face" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.66" spec="beast.base.evolution.datatype.UserDataType" characterName="far_away" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.67" spec="beast.base.evolution.datatype.UserDataType" characterName="far_away" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.68" spec="beast.base.evolution.datatype.UserDataType" characterName="fat_grease" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.69" spec="beast.base.evolution.datatype.UserDataType" characterName="fat_grease" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.70" spec="beast.base.evolution.datatype.UserDataType" characterName="fingernail" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.71" spec="beast.base.evolution.datatype.UserDataType" characterName="fire" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.72" spec="beast.base.evolution.datatype.UserDataType" characterName="five" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.73" spec="beast.base.evolution.datatype.UserDataType" characterName="flower" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.74" spec="beast.base.evolution.datatype.UserDataType" characterName="flower" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.75" spec="beast.base.evolution.datatype.UserDataType" characterName="flower" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.76" spec="beast.base.evolution.datatype.UserDataType" characterName="flower" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.77" spec="beast.base.evolution.datatype.UserDataType" characterName="fly_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.78" spec="beast.base.evolution.datatype.UserDataType" characterName="fly_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.79" spec="beast.base.evolution.datatype.UserDataType" characterName="fly_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.80" spec="beast.base.evolution.datatype.UserDataType" characterName="fly_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.81" spec="beast.base.evolution.datatype.UserDataType" characterName="fly_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.82" spec="beast.base.evolution.datatype.UserDataType" characterName="fly_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.83" spec="beast.base.evolution.datatype.UserDataType" characterName="foot" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.84" spec="beast.base.evolution.datatype.UserDataType" characterName="forehead" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.85" spec="beast.base.evolution.datatype.UserDataType" characterName="forehead" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.86" spec="beast.base.evolution.datatype.UserDataType" characterName="forehead" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.87" spec="beast.base.evolution.datatype.UserDataType" characterName="forehead" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.88" spec="beast.base.evolution.datatype.UserDataType" characterName="forehead" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.89" spec="beast.base.evolution.datatype.UserDataType" characterName="fox" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.90" spec="beast.base.evolution.datatype.UserDataType" characterName="fox" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.91" spec="beast.base.evolution.datatype.UserDataType" characterName="fox" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.92" spec="beast.base.evolution.datatype.UserDataType" characterName="fox" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.93" spec="beast.base.evolution.datatype.UserDataType" characterName="full" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.94" spec="beast.base.evolution.datatype.UserDataType" characterName="full" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.95" spec="beast.base.evolution.datatype.UserDataType" characterName="give_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.96" spec="beast.base.evolution.datatype.UserDataType" characterName="go_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.97" spec="beast.base.evolution.datatype.UserDataType" characterName="go_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.98" spec="beast.base.evolution.datatype.UserDataType" characterName="gold" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.99" spec="beast.base.evolution.datatype.UserDataType" characterName="green" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.100" spec="beast.base.evolution.datatype.UserDataType" characterName="green" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.101" spec="beast.base.evolution.datatype.UserDataType" characterName="green" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.102" spec="beast.base.evolution.datatype.UserDataType" characterName="hair" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.103" spec="beast.base.evolution.datatype.UserDataType" characterName="hair" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.104" spec="beast.base.evolution.datatype.UserDataType" characterName="hand" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.105" spec="beast.base.evolution.datatype.UserDataType" characterName="happy_be" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.106" spec="beast.base.evolution.datatype.UserDataType" characterName="head" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.107" spec="beast.base.evolution.datatype.UserDataType" characterName="hear_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.108" spec="beast.base.evolution.datatype.UserDataType" characterName="hear_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.109" spec="beast.base.evolution.datatype.UserDataType" characterName="heart" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.110" spec="beast.base.evolution.datatype.UserDataType" characterName="heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.111" spec="beast.base.evolution.datatype.UserDataType" characterName="hide_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.112" spec="beast.base.evolution.datatype.UserDataType" characterName="hit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.113" spec="beast.base.evolution.datatype.UserDataType" characterName="hit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.114" spec="beast.base.evolution.datatype.UserDataType" characterName="hit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.115" spec="beast.base.evolution.datatype.UserDataType" characterName="hit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.116" spec="beast.base.evolution.datatype.UserDataType" characterName="hit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.117" spec="beast.base.evolution.datatype.UserDataType" characterName="hit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.118" spec="beast.base.evolution.datatype.UserDataType" characterName="horn" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.119" spec="beast.base.evolution.datatype.UserDataType" characterName="knee" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.120" spec="beast.base.evolution.datatype.UserDataType" characterName="knee" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.121" spec="beast.base.evolution.datatype.UserDataType" characterName="knee" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.122" spec="beast.base.evolution.datatype.UserDataType" characterName="knee" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.123" spec="beast.base.evolution.datatype.UserDataType" characterName="know_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.124" spec="beast.base.evolution.datatype.UserDataType" characterName="laugh_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.125" spec="beast.base.evolution.datatype.UserDataType" characterName="laugh_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.126" spec="beast.base.evolution.datatype.UserDataType" characterName="leaf" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.127" spec="beast.base.evolution.datatype.UserDataType" characterName="leaf" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.128" spec="beast.base.evolution.datatype.UserDataType" characterName="leaf" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.129" spec="beast.base.evolution.datatype.UserDataType" characterName="leaf" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.130" spec="beast.base.evolution.datatype.UserDataType" characterName="leaf" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.131" spec="beast.base.evolution.datatype.UserDataType" characterName="leaf" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.132" spec="beast.base.evolution.datatype.UserDataType" characterName="left_hand_side" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.133" spec="beast.base.evolution.datatype.UserDataType" characterName="left_hand_side" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.134" spec="beast.base.evolution.datatype.UserDataType" characterName="left_hand_side" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.135" spec="beast.base.evolution.datatype.UserDataType" characterName="lick_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.136" spec="beast.base.evolution.datatype.UserDataType" characterName="light_not_heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.137" spec="beast.base.evolution.datatype.UserDataType" characterName="light_not_heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.138" spec="beast.base.evolution.datatype.UserDataType" characterName="light_not_heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.139" spec="beast.base.evolution.datatype.UserDataType" characterName="light_not_heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.140" spec="beast.base.evolution.datatype.UserDataType" characterName="light_not_heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.141" spec="beast.base.evolution.datatype.UserDataType" characterName="light_not_heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.142" spec="beast.base.evolution.datatype.UserDataType" characterName="light_not_heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.143" spec="beast.base.evolution.datatype.UserDataType" characterName="light_not_heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.144" spec="beast.base.evolution.datatype.UserDataType" characterName="light_not_heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.145" spec="beast.base.evolution.datatype.UserDataType" characterName="light_not_heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.146" spec="beast.base.evolution.datatype.UserDataType" characterName="light_not_heavy" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.147" spec="beast.base.evolution.datatype.UserDataType" characterName="live_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.148" spec="beast.base.evolution.datatype.UserDataType" characterName="live_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.149" spec="beast.base.evolution.datatype.UserDataType" characterName="louse" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.150" spec="beast.base.evolution.datatype.UserDataType" characterName="louse" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.151" spec="beast.base.evolution.datatype.UserDataType" characterName="man_SW_adult_male" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.152" spec="beast.base.evolution.datatype.UserDataType" characterName="man_SW_adult_male" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.153" spec="beast.base.evolution.datatype.UserDataType" characterName="man_SW_adult_male" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.154" spec="beast.base.evolution.datatype.UserDataType" characterName="man_SW_person" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.155" spec="beast.base.evolution.datatype.UserDataType" characterName="many" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.156" spec="beast.base.evolution.datatype.UserDataType" characterName="many" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.157" spec="beast.base.evolution.datatype.UserDataType" characterName="many" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.158" spec="beast.base.evolution.datatype.UserDataType" characterName="many" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.159" spec="beast.base.evolution.datatype.UserDataType" characterName="meat_SW_flesh" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.160" spec="beast.base.evolution.datatype.UserDataType" characterName="moon" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.161" spec="beast.base.evolution.datatype.UserDataType" characterName="mountain" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.162" spec="beast.base.evolution.datatype.UserDataType" characterName="mountain" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.163" spec="beast.base.evolution.datatype.UserDataType" characterName="mountain" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.164" spec="beast.base.evolution.datatype.UserDataType" characterName="mouse" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.165" spec="beast.base.evolution.datatype.UserDataType" characterName="mouse" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.166" spec="beast.base.evolution.datatype.UserDataType" characterName="mouse" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.167" spec="beast.base.evolution.datatype.UserDataType" characterName="mouth" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.168" spec="beast.base.evolution.datatype.UserDataType" characterName="name" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.169" spec="beast.base.evolution.datatype.UserDataType" characterName="navel" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.170" spec="beast.base.evolution.datatype.UserDataType" characterName="navel" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.171" spec="beast.base.evolution.datatype.UserDataType" characterName="navel" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.172" spec="beast.base.evolution.datatype.UserDataType" characterName="neck" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.173" spec="beast.base.evolution.datatype.UserDataType" characterName="new" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.174" spec="beast.base.evolution.datatype.UserDataType" characterName="night" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.175" spec="beast.base.evolution.datatype.UserDataType" characterName="night" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.176" spec="beast.base.evolution.datatype.UserDataType" characterName="night" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.177" spec="beast.base.evolution.datatype.UserDataType" characterName="night" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.178" spec="beast.base.evolution.datatype.UserDataType" characterName="nine" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.179" spec="beast.base.evolution.datatype.UserDataType" characterName="nose" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.180" spec="beast.base.evolution.datatype.UserDataType" characterName="not" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.181" spec="beast.base.evolution.datatype.UserDataType" characterName="old_man" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.182" spec="beast.base.evolution.datatype.UserDataType" characterName="old_man" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.183" spec="beast.base.evolution.datatype.UserDataType" characterName="old_man" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.184" spec="beast.base.evolution.datatype.UserDataType" characterName="old_man" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.185" spec="beast.base.evolution.datatype.UserDataType" characterName="old_woman" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.186" spec="beast.base.evolution.datatype.UserDataType" characterName="old_woman" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.187" spec="beast.base.evolution.datatype.UserDataType" characterName="old_woman" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.188" spec="beast.base.evolution.datatype.UserDataType" characterName="old_woman" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.189" spec="beast.base.evolution.datatype.UserDataType" characterName="one" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.190" spec="beast.base.evolution.datatype.UserDataType" characterName="push_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.191" spec="beast.base.evolution.datatype.UserDataType" characterName="push_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.192" spec="beast.base.evolution.datatype.UserDataType" characterName="red" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.193" spec="beast.base.evolution.datatype.UserDataType" characterName="red" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.194" spec="beast.base.evolution.datatype.UserDataType" characterName="red" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.195" spec="beast.base.evolution.datatype.UserDataType" characterName="right_hand_side" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.196" spec="beast.base.evolution.datatype.UserDataType" characterName="right_hand_side" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.197" spec="beast.base.evolution.datatype.UserDataType" characterName="right_hand_side" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.198" spec="beast.base.evolution.datatype.UserDataType" characterName="right_hand_side" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.199" spec="beast.base.evolution.datatype.UserDataType" characterName="river" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.200" spec="beast.base.evolution.datatype.UserDataType" characterName="river" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.201" spec="beast.base.evolution.datatype.UserDataType" characterName="river" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.202" spec="beast.base.evolution.datatype.UserDataType" characterName="road" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.203" spec="beast.base.evolution.datatype.UserDataType" characterName="road" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.204" spec="beast.base.evolution.datatype.UserDataType" characterName="road" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.205" spec="beast.base.evolution.datatype.UserDataType" characterName="root" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.206" spec="beast.base.evolution.datatype.UserDataType" characterName="root" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.207" spec="beast.base.evolution.datatype.UserDataType" characterName="root" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.208" spec="beast.base.evolution.datatype.UserDataType" characterName="root" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.209" spec="beast.base.evolution.datatype.UserDataType" characterName="root" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.210" spec="beast.base.evolution.datatype.UserDataType" characterName="rope" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.211" spec="beast.base.evolution.datatype.UserDataType" characterName="salt" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.212" spec="beast.base.evolution.datatype.UserDataType" characterName="sand" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.213" spec="beast.base.evolution.datatype.UserDataType" characterName="sand" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.214" spec="beast.base.evolution.datatype.UserDataType" characterName="sand" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.215" spec="beast.base.evolution.datatype.UserDataType" characterName="sand" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.216" spec="beast.base.evolution.datatype.UserDataType" characterName="sand" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.217" spec="beast.base.evolution.datatype.UserDataType" characterName="seven" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.218" spec="beast.base.evolution.datatype.UserDataType" characterName="sew_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.219" spec="beast.base.evolution.datatype.UserDataType" characterName="sew_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.220" spec="beast.base.evolution.datatype.UserDataType" characterName="shadow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.221" spec="beast.base.evolution.datatype.UserDataType" characterName="sister_mans" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.222" spec="beast.base.evolution.datatype.UserDataType" characterName="sister_womans" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.223" spec="beast.base.evolution.datatype.UserDataType" characterName="sit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.224" spec="beast.base.evolution.datatype.UserDataType" characterName="sit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.225" spec="beast.base.evolution.datatype.UserDataType" characterName="sit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.226" spec="beast.base.evolution.datatype.UserDataType" characterName="sit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.227" spec="beast.base.evolution.datatype.UserDataType" characterName="sit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.228" spec="beast.base.evolution.datatype.UserDataType" characterName="sit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.229" spec="beast.base.evolution.datatype.UserDataType" characterName="six" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.230" spec="beast.base.evolution.datatype.UserDataType" characterName="skin" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.231" spec="beast.base.evolution.datatype.UserDataType" characterName="sleep_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.232" spec="beast.base.evolution.datatype.UserDataType" characterName="small" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.233" spec="beast.base.evolution.datatype.UserDataType" characterName="small" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.234" spec="beast.base.evolution.datatype.UserDataType" characterName="small" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.235" spec="beast.base.evolution.datatype.UserDataType" characterName="small" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.236" spec="beast.base.evolution.datatype.UserDataType" characterName="small" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.237" spec="beast.base.evolution.datatype.UserDataType" characterName="smoke" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.238" spec="beast.base.evolution.datatype.UserDataType" characterName="smoke" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.239" spec="beast.base.evolution.datatype.UserDataType" characterName="speak_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.240" spec="beast.base.evolution.datatype.UserDataType" characterName="spit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.241" spec="beast.base.evolution.datatype.UserDataType" characterName="spit_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.242" spec="beast.base.evolution.datatype.UserDataType" characterName="stand_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.243" spec="beast.base.evolution.datatype.UserDataType" characterName="stand_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.244" spec="beast.base.evolution.datatype.UserDataType" characterName="star" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.245" spec="beast.base.evolution.datatype.UserDataType" characterName="star" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.246" spec="beast.base.evolution.datatype.UserDataType" characterName="stone" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.247" spec="beast.base.evolution.datatype.UserDataType" characterName="suck_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.248" spec="beast.base.evolution.datatype.UserDataType" characterName="suck_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.249" spec="beast.base.evolution.datatype.UserDataType" characterName="suck_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.250" spec="beast.base.evolution.datatype.UserDataType" characterName="suck_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.251" spec="beast.base.evolution.datatype.UserDataType" characterName="sun" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.252" spec="beast.base.evolution.datatype.UserDataType" characterName="sun" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.253" spec="beast.base.evolution.datatype.UserDataType" characterName="sun" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.254" spec="beast.base.evolution.datatype.UserDataType" characterName="sweet" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.255" spec="beast.base.evolution.datatype.UserDataType" characterName="sweet" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.256" spec="beast.base.evolution.datatype.UserDataType" characterName="swim_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.257" spec="beast.base.evolution.datatype.UserDataType" characterName="swim_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.258" spec="beast.base.evolution.datatype.UserDataType" characterName="swim_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.259" spec="beast.base.evolution.datatype.UserDataType" characterName="swim_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.260" spec="beast.base.evolution.datatype.UserDataType" characterName="swim_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.261" spec="beast.base.evolution.datatype.UserDataType" characterName="tail" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.262" spec="beast.base.evolution.datatype.UserDataType" characterName="ten" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.263" spec="beast.base.evolution.datatype.UserDataType" characterName="think_over_about_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.264" spec="beast.base.evolution.datatype.UserDataType" characterName="think_over_about_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.265" spec="beast.base.evolution.datatype.UserDataType" characterName="think_over_about_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.266" spec="beast.base.evolution.datatype.UserDataType" characterName="think_over_about_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.267" spec="beast.base.evolution.datatype.UserDataType" characterName="this" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.268" spec="beast.base.evolution.datatype.UserDataType" characterName="thou_you_sg" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.269" spec="beast.base.evolution.datatype.UserDataType" characterName="three" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.270" spec="beast.base.evolution.datatype.UserDataType" characterName="tire" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.271" spec="beast.base.evolution.datatype.UserDataType" characterName="tire" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.272" spec="beast.base.evolution.datatype.UserDataType" characterName="tire" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.273" spec="beast.base.evolution.datatype.UserDataType" characterName="tire" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.274" spec="beast.base.evolution.datatype.UserDataType" characterName="tongue" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.275" spec="beast.base.evolution.datatype.UserDataType" characterName="tooth" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.276" spec="beast.base.evolution.datatype.UserDataType" characterName="tree" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.277" spec="beast.base.evolution.datatype.UserDataType" characterName="tree" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.278" spec="beast.base.evolution.datatype.UserDataType" characterName="tree" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.279" spec="beast.base.evolution.datatype.UserDataType" characterName="tree" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.280" spec="beast.base.evolution.datatype.UserDataType" characterName="tree" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.281" spec="beast.base.evolution.datatype.UserDataType" characterName="tree" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.282" spec="beast.base.evolution.datatype.UserDataType" characterName="tree" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.283" spec="beast.base.evolution.datatype.UserDataType" characterName="two" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.284" spec="beast.base.evolution.datatype.UserDataType" characterName="walk_to" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.285" spec="beast.base.evolution.datatype.UserDataType" characterName="warm_hot_SW" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.286" spec="beast.base.evolution.datatype.UserDataType" characterName="warm_hot_SW" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.287" spec="beast.base.evolution.datatype.UserDataType" characterName="warm_hot_SW" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.288" spec="beast.base.evolution.datatype.UserDataType" characterName="warm_hot_SW" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.289" spec="beast.base.evolution.datatype.UserDataType" characterName="warm_hot_SW" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.290" spec="beast.base.evolution.datatype.UserDataType" characterName="warm_hot_SW" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.291" spec="beast.base.evolution.datatype.UserDataType" characterName="warm_hot_SW" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.292" spec="beast.base.evolution.datatype.UserDataType" characterName="warm_hot_SW" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.293" spec="beast.base.evolution.datatype.UserDataType" characterName="warm_hot_SW" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.294" spec="beast.base.evolution.datatype.UserDataType" characterName="water" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.295" spec="beast.base.evolution.datatype.UserDataType" characterName="water" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.296" spec="beast.base.evolution.datatype.UserDataType" characterName="we_inclusive" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.297" spec="beast.base.evolution.datatype.UserDataType" characterName="we_inclusive" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.298" spec="beast.base.evolution.datatype.UserDataType" characterName="what" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.299" spec="beast.base.evolution.datatype.UserDataType" characterName="white" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.300" spec="beast.base.evolution.datatype.UserDataType" characterName="who" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.301" spec="beast.base.evolution.datatype.UserDataType" characterName="who" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.302" spec="beast.base.evolution.datatype.UserDataType" characterName="wind" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.303" spec="beast.base.evolution.datatype.UserDataType" characterName="woman" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.304" spec="beast.base.evolution.datatype.UserDataType" characterName="worm" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.305" spec="beast.base.evolution.datatype.UserDataType" characterName="worm" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.306" spec="beast.base.evolution.datatype.UserDataType" characterName="worm" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.307" spec="beast.base.evolution.datatype.UserDataType" characterName="year" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.308" spec="beast.base.evolution.datatype.UserDataType" characterName="yellow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.309" spec="beast.base.evolution.datatype.UserDataType" characterName="yellow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.310" spec="beast.base.evolution.datatype.UserDataType" characterName="yellow" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.311" spec="beast.base.evolution.datatype.UserDataType" characterName="young_female" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.312" spec="beast.base.evolution.datatype.UserDataType" characterName="young_female" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.313" spec="beast.base.evolution.datatype.UserDataType" characterName="young_female" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.314" spec="beast.base.evolution.datatype.UserDataType" characterName="young_female" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.315" spec="beast.base.evolution.datatype.UserDataType" characterName="young_female" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.316" spec="beast.base.evolution.datatype.UserDataType" characterName="young_male" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.317" spec="beast.base.evolution.datatype.UserDataType" characterName="young_male" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.318" spec="beast.base.evolution.datatype.UserDataType" characterName="young_male" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.319" spec="beast.base.evolution.datatype.UserDataType" characterName="young_male" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.320" spec="beast.base.evolution.datatype.UserDataType" characterName="young_male" codeMap="" states="-1" value=""/>
+            <charstatelabels id="UserDataType.321" spec="beast.base.evolution.datatype.UserDataType" characterName="young_male" codeMap="" states="-1" value=""/>
+        </userDataType>
+    </data>
+
+    <map name="Uniform" >beast.base.inference.distribution.Uniform</map>
+
+    <map name="Exponential" >beast.base.inference.distribution.Exponential</map>
+
+    <map name="LogNormal" >beast.base.inference.distribution.LogNormalDistributionModel</map>
+
+    <map name="Normal" >beast.base.inference.distribution.Normal</map>
+
+    <map name="Beta" >beast.base.inference.distribution.Beta</map>
+
+    <map name="Gamma" >beast.base.inference.distribution.Gamma</map>
+
+    <map name="LaplaceDistribution" >beast.base.inference.distribution.LaplaceDistribution</map>
+
+    <map name="prior" >beast.base.inference.distribution.Prior</map>
+
+    <map name="InverseGamma" >beast.base.inference.distribution.InverseGamma</map>
+
+    <map name="OneOnX" >beast.base.inference.distribution.OneOnX</map>
+
+    <run id="mcmc" spec="MCMC" chainLength="5000000">
+        <state id="state" spec="State" storeEvery="5000">
+            <tree id="Tree.t:tree" spec="beast.base.evolution.tree.Tree" name="stateNode">
+                <taxonset id="TaxonSet.quechua_modern" spec="TaxonSet">
+                    <alignment idref="quechua_modern"/>
+                </taxonset>
+            </tree>
+            <parameter id="bcov_alpha.s:quechua_modern" spec="parameter.RealParameter" lower="1.0E-4" name="stateNode" upper="1.0">0.5</parameter>
+            <parameter id="bcov_s.s:quechua_modern" spec="parameter.RealParameter" lower="1.0E-4" name="stateNode" upper="Infinity">0.5</parameter>
+            <parameter id="frequencies.s:quechua_modern" spec="parameter.RealParameter" dimension="2" lower="0.0" name="stateNode" upper="1.0">0.5 0.5</parameter>
+            <parameter id="birthRate.t:tree" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+            <parameter id="clockRate.c:location" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+            <parameter id="clockRate.c:clock" spec="parameter.RealParameter" name="stateNode">1.0</parameter>
+        </state>
+        <init id="RandomTree.t:tree" spec="beastlabs.evolution.tree.SimpleRandomTree" estimate="false" initial="@Tree.t:tree" taxa="@quechua_modern"/>
+        <distribution id="posterior" spec="CompoundDistribution">
+            <distribution id="prior" spec="CompoundDistribution">
+                <distribution id="YuleModel.t:tree" spec="beast.base.evolution.speciation.YuleModel" birthDiffRate="@birthRate.t:tree" tree="@Tree.t:tree"/>
+                <prior id="bcov_alpha_prior.s:quechua_modern" name="distribution" x="@bcov_alpha.s:quechua_modern">
+                    <Uniform id="Uniform.1" name="distr" upper="5.0"/>
+                </prior>
+                <prior id="bcov_s_prior.s:quechua_modern" name="distribution" x="@bcov_s.s:quechua_modern">
+                    <Gamma id="Gamma.0" name="distr">
+                        <alpha id="Function$Constant.0" spec="Function$Constant" value="0.05"/>
+                        <beta id="Function$Constant.1" spec="Function$Constant" value="10.0"/>
+                    </Gamma>
+                </prior>
+                <prior id="YuleBirthRatePrior.t:tree" name="distribution" x="@birthRate.t:tree">
+                    <Exponential id="Exponential.1" name="distr">
+                        <parameter id="RealParameter.6" spec="parameter.RealParameter" estimate="false" name="mean">0.5</parameter>
+                    </Exponential>
+                </prior>
+                <prior id="ClockPrior.c:clock" name="distribution" x="@clockRate.c:clock">
+                    <Exponential id="Exponential.14" name="distr">
+                        <parameter id="RealParameter.91" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                    </Exponential>
+                </prior>
+                <prior id="ClockPrior.c:location" name="distribution" x="@clockRate.c:location">
+                    <Exponential id="Exponential.13" name="distr">
+                        <parameter id="RealParameter.90" spec="parameter.RealParameter" estimate="false" name="mean">1.0</parameter>
+                    </Exponential>
+                </prior>
+                <distribution id="root.prior" spec="beast.base.evolution.tree.MRCAPrior" tree="@Tree.t:tree">
+                    <taxonset id="root" spec="TaxonSet">
+                        <taxon id="Apuri" spec="Taxon"/>
+                        <taxon id="Apurimac" spec="Taxon"/>
+                        <taxon id="Arma" spec="Taxon"/>
+                        <taxon id="Atalla" spec="Taxon"/>
+                        <taxon id="Ayacucho" spec="Taxon"/>
+                        <taxon id="Azuay" spec="Taxon"/>
+                        <taxon id="Bobonaza" spec="Taxon"/>
+                        <taxon id="CacraHongos" spec="Taxon"/>
+                        <taxon id="Chachapoyas" spec="Taxon"/>
+                        <taxon id="Chacpar" spec="Taxon"/>
+                        <taxon id="Chetilla" spec="Taxon"/>
+                        <taxon id="Curva" spec="Taxon"/>
+                        <taxon id="Cuzco" spec="Taxon"/>
+                        <taxon id="Huallaga" spec="Taxon"/>
+                        <taxon id="Huanca" spec="Taxon"/>
+                        <taxon id="Huangascar" spec="Taxon"/>
+                        <taxon id="HuarazHuailas" spec="Taxon"/>
+                        <taxon id="Imbabura" spec="Taxon"/>
+                        <taxon id="Inkawasi" spec="Taxon"/>
+                        <taxon id="Jauja" spec="Taxon"/>
+                        <taxon id="Lamas" spec="Taxon"/>
+                        <taxon id="Laraos" spec="Taxon"/>
+                        <taxon id="LinchaTana" spec="Taxon"/>
+                        <taxon id="Maragua" spec="Taxon"/>
+                        <taxon id="Napo" spec="Taxon"/>
+                        <taxon id="Pacaraos" spec="Taxon"/>
+                        <taxon id="Pastaza" spec="Taxon"/>
+                        <taxon id="Pocona" spec="Taxon"/>
+                        <taxon id="Puno" spec="Taxon"/>
+                        <taxon id="Putumayo" spec="Taxon"/>
+                        <taxon id="Raimondi" spec="Taxon"/>
+                        <taxon id="SanPedro" spec="Taxon"/>
+                        <taxon id="Santiagueno" spec="Taxon"/>
+                        <taxon id="Serena" spec="Taxon"/>
+                        <taxon id="Taquile" spec="Taxon"/>
+                        <taxon id="Tarma" spec="Taxon"/>
+                        <taxon id="Troje" spec="Taxon"/>
+                        <taxon id="Wari" spec="Taxon"/>
+                        <taxon id="Yanac" spec="Taxon"/>
+                    </taxonset>
+                    <Normal id="Normal.0" name="distr">
+                        <parameter id="RealParameter.4" spec="parameter.RealParameter" estimate="false" name="mean">2000.0</parameter>
+                        <parameter id="RealParameter.5" spec="parameter.RealParameter" estimate="false" name="sigma">200.0</parameter>
+                    </Normal>
+                </distribution>
+            </distribution>
+            <distribution id="likelihood" spec="CompoundDistribution" useThreads="true">
+                <distribution id="treeLikelihood.quechua_modern" spec="TreeLikelihood" tree="@Tree.t:tree" useAmbiguities="true">
+                    <data
+id="orgdata.quechua_modern"
+spec="FilteredAlignment"
+ascertained="true"
+data="@quechua_modern"
+excludeto="1"
+filter="-">
+                        <userDataType id="TwoStateCovarion.0" spec="beast.base.evolution.datatype.TwoStateCovarion"/>
+                    </data>
+                    <siteModel id="SiteModel.s:quechua_modern" spec="SiteModel" gammaCategoryCount="1">
+                        <parameter id="mutationRate.s:quechua_modern" spec="parameter.RealParameter" estimate="false" name="mutationRate">1.0</parameter>
+                        <parameter id="gammaShape.s:quechua_modern" spec="parameter.RealParameter" estimate="false" name="shape">1.0</parameter>
+                        <parameter id="proportionInvariant.s:quechua_modern" spec="parameter.RealParameter" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+                        <substModel id="covarion" spec="BinaryCovarion" alpha="@bcov_alpha.s:quechua_modern" switchRate="@bcov_s.s:quechua_modern" vfrequencies="@frequencies.s:quechua_modern">
+                            <parameter id="hiddenfrequencies.s:quechua_modern" spec="parameter.RealParameter" dimension="2" estimate="false" lower="0.0" name="hfrequencies" upper="1.0">0.5 0.5</parameter>
+                            <frequencies id="dummyfrequencies.s:quechua_modern" spec="Frequencies" data="@quechua_modern" estimate="false"/>
+                        </substModel>
+                    </siteModel>
+                    <branchRateModel id="StrictClock.c:clock" spec="beast.base.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:clock"/>
+                </distribution>
+                <distribution id="slocationtreeLikelihood.location" spec="sphericalGeo.ApproxMultivariateTraitLikelihood" tree="@Tree.t:tree">
+                    <data
+id="location"
+spec="sphericalGeo.AlignmentFromTraitMap">
+                        <traitMap id="traitmap.s:location" spec="sphericalGeo.TreeTraitMap" initByMean="true" randomizelower="-90 -180" randomizeupper="90 180" traitName="location" tree="@Tree.t:tree">
+                            <parameter id="location.s:location" spec="sphericalGeo.LocationParameter" dimension="154" minordimension="2">0.0 0.0</parameter>
+                                                    Apuri=-12.89 -75.81,
+
+Apurimac=-13.89 -73.14,
+
+Arma=-15.42 -72.74,
+
+Atalla=-12.76 -74.87,
+
+Ayacucho=-13.85 -74.32,
+
+Azuay=-2.48 -78.97,
+
+Bobonaza=-1.5 -77.9,
+
+CacraHongos=-12.81 -75.78,
+
+Chachapoyas=-6.27 -77.66,
+
+Chacpar=-9.58 -77.21,
+
+Chetilla=-7.09 -78.32,
+
+Curva=-14.4 -68.79,
+
+Cuzco=-14.09 -71.77,
+
+Huallaga=-9.57 -75.59,
+
+Huanca=-11.77 -75.49,
+
+Huangascar=-12.9 -75.83,
+
+HuarazHuailas=-9.52 -77.52,
+Imbabura=-0.23 -78.26,
+
+Inkawasi=-6.17 -79.47,
+
+Jauja=-11.67 -75.28,
+
+Lamas=-6.42 -76.52,
+
+Laraos=-13.11 -75.77,
+
+LinchaTana=-12.8 -75.66,
+
+Maragua=-18.96 -65.78,
+
+Napo=-0.04 -76.23,
+
+Pacaraos=-11.14 -76.73,
+
+Pastaza=-4.79 -76.53,
+
+Pocona=-17.67 -65.42,
+
+Puno=-14.61 -70.21,
+
+Putumayo=1.17 -76.96,
+
+Raimondi=-9.1 -77.01,
+
+SanPedro=-13.09 -75.74,
+
+Santiagueno=-27.79 -64.25,
+
+Serena=-0.76 -77.54,
+
+Taquile=-15.77 -69.68,
+
+Tarma=-11.42 -75.68,
+
+Troje=-1.37 -78.85,
+
+Wari=-9.34 -77.17,
+
+Yanac=-8.58 -77.99                    
+                        </traitMap>
+                        <userDataType id="LocationDataType.0" spec="sphericalGeo.LocationDataType"/>
+                    </data>
+                    <siteModel id="geoContSiteModel.s:location" spec="sphericalGeo.sitemodel.GeoSiteModel">
+                        <substModel id="sdiffusionModel.s:location" spec="sphericalGeo.SphericalDiffusionModel" fast="true">
+                            <parameter id="sprecision.s:location" spec="parameter.RealParameter" lower="0.0" name="precision">100.0</parameter>
+                        </substModel>
+                    </siteModel>
+                    <branchRateModel id="StrictClock.c:location" spec="beast.base.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:location"/>
+                </distribution>
+            </distribution>
+        </distribution>
+        <operator id="bcovAlphaScaler.s:quechua_modern" spec="ScaleOperator" parameter="@bcov_alpha.s:quechua_modern" weight="0.1"/>
+        <operator id="bcovSwitchParamScaler.s:quechua_modern" spec="ScaleOperator" parameter="@bcov_s.s:quechua_modern" weight="0.1"/>
+        <operator id="YuleBirthRateScaler.t:tree" spec="ScaleOperator" parameter="@birthRate.t:tree" weight="3.0"/>
+        <operator id="frequenciesDelta.s:quechua_modern" spec="operator.DeltaExchangeOperator" delta="0.01" weight="0.1">
+            <parameter idref="frequencies.s:quechua_modern"/>
+        </operator>
+        <operator id="YuleModelTreeScaler.t:tree" spec="ScaleOperator" scaleFactor="0.5" tree="@Tree.t:tree" weight="3.0"/>
+        <operator id="YuleModelTreeRootScaler.t:tree" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Tree.t:tree" weight="3.0"/>
+        <operator id="YuleModelUniformOperator.t:tree" spec="Uniform" tree="@Tree.t:tree" weight="30.0"/>
+        <operator id="YuleModelSubtreeSlide.t:tree" spec="SubtreeSlide" tree="@Tree.t:tree" weight="15.0"/>
+        <operator id="YuleModelNarrow.t:tree" spec="Exchange" tree="@Tree.t:tree" weight="15.0"/>
+        <operator id="YuleModelWide.t:tree" spec="Exchange" isNarrow="false" tree="@Tree.t:tree" weight="3.0"/>
+        <operator id="YuleModelWilsonBalding.t:tree" spec="WilsonBalding" tree="@Tree.t:tree" weight="3.0"/>
+        <operator id="YuleModelBICEPSEpochTop.t:tree" spec="EpochFlexOperator" scaleFactor="0.1" tree="@Tree.t:tree" weight="2.0"/>
+        <operator id="YuleModelBICEPSEpochAll.t:tree" spec="EpochFlexOperator" fromOldestTipOnly="false" scaleFactor="0.1" tree="@Tree.t:tree" weight="2.0"/>
+        <operator id="YuleModelBICEPSTreeFlex.t:tree" spec="TreeStretchOperator" scaleFactor="0.01" tree="@Tree.t:tree" weight="2.0"/>
+        <operator id="StrictClockRateScaler.c:location" spec="ScaleOperator" parameter="@clockRate.c:location" weight="3.0"/>
+        <operator id="strictClockUpDownOperator.c:clock" spec="operator.UpDownOperator" scaleFactor="0.75" weight="3.0">
+            <up idref="clockRate.c:clock"/>
+            <down idref="Tree.t:tree"/>
+        </operator>
+        <operator id="StrictClockRateScaler.c:clock" spec="ScaleOperator" parameter="@clockRate.c:clock" weight="3.0"/>
+        <logger id="tracelog" spec="Logger" fileName="quechua_modern.log" logEvery="1000" model="@posterior" sort="smart">
+            <log idref="posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+            <log idref="treeLikelihood.quechua_modern"/>
+            <log id="TreeHeight.t:tree" spec="beast.base.evolution.tree.TreeStatLogger" tree="@Tree.t:tree"/>
+            <log idref="bcov_alpha.s:quechua_modern"/>
+            <log idref="bcov_s.s:quechua_modern"/>
+            <log idref="YuleModel.t:tree"/>
+            <log idref="birthRate.t:tree"/>
+            <log idref="frequencies.s:quechua_modern"/>
+            <log idref="root.prior"/>
+            <log idref="clockRate.c:location"/>
+            <log idref="slocationtreeLikelihood.location"/>
+            <log idref="sprecision.s:location"/>
+            <log idref="clockRate.c:clock"/>
+        </logger>
+        <logger id="screenlog" spec="Logger" logEvery="1000">
+            <log idref="posterior"/>
+            <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+        </logger>
+        <logger id="treelog.t:tree" spec="Logger" fileName="quechua_modern.trees" logEvery="1000" mode="tree">
+            <log id="TreeWithMetaDataLogger.t:tree" spec="beast.base.evolution.TreeWithMetaDataLogger" tree="@Tree.t:tree">
+                <metadata id="locationslocation" spec="sphericalGeo.TraitFunction" likelihood="@slocationtreeLikelihood.location">0.0</metadata>
+            </log>
+        </logger>
+    </run>
+
+</beast>
