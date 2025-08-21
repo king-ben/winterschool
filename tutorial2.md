@@ -114,11 +114,11 @@ The first step is to read the tree file including the node annotations into R. W
 
 ```r
 # read the trees, the postburnin trees you made with logcombiner
-t <- read.beast("quechua_postburnin.trees")
+t <- read.beast("tutorial_2_analyses/quechua_postburnin.trees")
 
 # read the latitude and longitude files
-lat <- read_tsv("../Latitude.dat")
-lon <- read_tsv("../Longitude.dat")
+lat <- read_tsv("Latitude.dat")
+lon <- read_tsv("Longitude.dat")
 # combine into a table
 lang_locs <- full_join(lon,lat)
 # filter so that only the languages included in the tree are used
