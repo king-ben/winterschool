@@ -250,7 +250,7 @@ We have now performed a simple phylogenetic analysis in beast2 and obtained a tr
 
 The strict clock is usually an unrealistic model for language evolution. The relaxed clock, in which some variation in the rate of language evolution between branches is allowed, is usually more realistic.
 
-Reopen the xml file in BEAUti (if you closed BEAUti, File > Load). In the clock model tab, change strict clock to Optimised relaxed clock. Three parameters appear in the Priiors panel: the clock mean, sigma and the individual branch rates. The default priors are probably fine for now. Save a new xml (File > Save As) in a new folder, and run the analysis as before.
+Reopen the xml file in BEAUti (if you closed BEAUti, File > Load). In the clock model tab, change strict clock to Optimised relaxed clock. Three parameters appear in the Priors panel: the clock mean, sigma and the individual branch rates. The default priors are probably fine for now. Save a new xml (File > Save As) in a new folder, and run the analysis as before.
 
 * Check for convergence in Tracer. Adjust the operators or run the analysis longer, following the instructions above, if necessary
 * The Coefficient of Variation, a statistic calculated during the run, is a good measure of the amount of variation in rate between branches. If this overlaps with 0, then there is evidence for a strict clock. If the coefficient of variation doesn't overlap with 0, it is evidence for a relaxed clock. What about your own analysis, is there evidence for a relaxed clock?
