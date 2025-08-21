@@ -1,7 +1,7 @@
 get_location <- function(tree, clade, locationannotation="locationslocation"){
   tr <- tree@phylo
   node <- getMRCA(tr, clade)
-  tree@data[locationannotation][which(tree@data$node == node)][[1]]
+  tree@data[locationannotation][[1]][which(tree@data$node == node)][[1]]
 }
 
 ancestral_locations <- function(treelist, clade, locationannotation="locationslocation"){
