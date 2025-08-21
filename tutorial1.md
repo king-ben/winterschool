@@ -1,6 +1,6 @@
 # Building Bayesian Language Phylogenies with BEAST2
 
-*Author(s):* Benedict King  
+*Author:* Benedict King  
 
 ## Table of Contents
 1. [Introduction](#introduction)
