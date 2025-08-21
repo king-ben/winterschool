@@ -16,12 +16,13 @@
 11. [Checking the progress of the analysis](#checking-the-progress-of-the-analysis)
 12. [Summary statistics](#summary-statistics)
 13. [Summary trees](#summary-trees)
-
+14. [Relaxed Clock](#relaxed-clock)
+15. [Alternative calibrations](#alternative-calibrations)
 
 ---
 
 ## Introduction
-In this tutorial we will build a phylogeny of the Quechuan language family. We start with an alignment of cognate sets in **nexus** (.nex) format. 
+In this tutorial we will build a phylogeny of the Quechuan language family. We start with an alignment of cognate sets in **nexus** (.nex) format. This is the file quechua_modern.nex. From this we build an XML file with all our analysis settings, which can be run in BEAST. 
 
 
 ---
@@ -33,13 +34,13 @@ This is the main software for performong the Bayesian analysis via MCMC. It take
 ### BEAUti
 This program comes packaged with BEAST2. BEAUti is a graphical user interface program which produces XML files, which can then be loaded into BEAST2 for analysis. 
 
-### Tracer
+### [Tracer](https://github.com/beast-dev/tracer/releases/tag/v1.7.2)
 Tracer is a program for checking the output of BEAST2 analyses. It is used to summarise parameters values, and also to check if the analysis has run long enough.
 
 ### Tree Annotator
 Another program that comes packaged with BEAST2. The output of a BEAST2 analysis is a sample of trees. TreeAnnotator takes this sample of trees and calculates a single summary tree. The branches of the annotated tree are labelled with key statistics, such as the support for that branch or the rate of evolution.
 
-### FigTree
+### [FigTree](https://github.com/rambaut/figtree/releases/tag/v1.4.4) (optional)
 FigTree is used to display the summary trees from Tree Annotator. There are a number of functions to choose the font of the language names, which statistics to show as branch labels, coloring the branches according to the rate of evolution, etc. Figtree is often used to make the figures that appear in publications.
 
 
@@ -79,7 +80,7 @@ Some analyses require a specialised template, configure the BEAST2 XML file in t
 - choose File/Add Alignment
 - Navigate to the Nexus file and select it. 
 
-Hopefully something like this has now appeared:
+Hopefully your data has now appeared in BEAUti:
 
 ![](doc/alignment.png)
 
@@ -160,7 +161,7 @@ You now have two columns of languages, the right column is the languages that de
 
 ## The MCMC tab
 
-This tab contains some options for running the analysis. One of the options is **Chain Length**. Set this to 5 Million. 
+This tab contains some options for running the analysis. One of the options is **Chain Length**. Set this to 2 Million. 
 
 We are now ready to export the BEAST2 XML file and run the analysis. Click File > Save and choose a suitable file name and location to save the XML file (something like quechuan.xml will do). We will be running multiple analyses today, so it is a good idea to put each analysis in a separate folder with a sensible name.
 
@@ -196,7 +197,7 @@ Let's first look at the posterior. Click on the **Trace** tab in the top right. 
 
 Another way to tell if the analysis has run long enough is to look at the effective sample size. This is on the left, in the column **ESS**. As a general rule of thumb, ESS values should all be over 200. 
 
-If any of the parameters do not have a high enough ESS, there are a number of steps that can be taken
+If any of the parameters do not have a high enough ESS, there are a number of steps that can be taken.
 
 ### Resuming the analysis
 
@@ -241,7 +242,7 @@ You can open the summary tree by going to the website [IcyTree](https://icytree.
 ![](doc/icytree.png)
 
 
-# Further anlyses
+# Further analyses
 
 We have now performed a simple phylogenetic analysis in beast2 and obtained a tree. Now we will try some more advanced analyses.
 
