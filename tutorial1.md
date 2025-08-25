@@ -102,7 +102,9 @@ Here is the diagram of the binary covarion model from the lecture again. Can you
 
 For now we can leave all the parameters on their default values. Notice the **estimate** check boxes. As the name suggests, ticking this box means that the parameter value is estimated as part of the analysis. If it is unchecked, then the parameter value remains fixed throughout the analysis. When a parameter is estimated it requires an operator so that new values for the parameter are proposed during the MCMC. 
 
+Due to a bug in BEAST2, The Mutation Rate parameter might be an estimated parameter i.e. it has an operator and it's value can change. However, it is not possible to simultaneously estimate this and the clock rate, and leaving mutation rate as an esimated will lead to issues with convergence. In the Site Model tab, click on the lexical partition (quechua modern), and untick the estimate box next to Mutation Rate. Make sure this box is not ticked.
 
+![](doc/mutationrateestimate.png)
 
 > ### Optional: understanding esimated parameters and operators
 >To gain a better understanding of Operators, it helps to take a look. To see the list of operators, select View > Show Operators Panel. Now click on the Operators tab and you will see a list of operators. Find the operator for the covarion alpha (hint, it's probably the first one). Go back to the site model tab and uncheck the estimate box for the **alpha** parameter. Go back to the Operators panel. You should find that the operator for the alpha has now disappeared. 

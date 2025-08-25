@@ -52,7 +52,7 @@ The location data is analysed using a spherical diffusion model. For more detail
 
 The main parameter for the spherical diffusion model is *precision*. This determines the speed of diffusion away from the ancestral location. Larger precision means less diffusion away from the ancestor. This value can be changed in BEAUti in the substitution model tab. Click on location under partitions and click the small button to the right of Subst Model. For now we will keep the value at the default of 100, but we will change this value later.
 
-Beast is a program full of bugs. One of these is that when the location data is added to the analysis, the Mutation Rate parameter in the lexical partition suddenly becomes an estimated parameter i.e. it has an operator and it's value can change. However, it is not possible to simultaneously estimate this and the clock rate, and leaving mutation rate as an esimated will lead to issues with convergence. In the Site Model tab, click on the lexical partition (quechua modern), and untick the estimate box next to Mutation Rate.
+Make sure the mutation rate parameter in the lexical data partition is NOT estimated!
 
 ![](doc/mutationrateestimate.png)
 
@@ -164,7 +164,7 @@ ancestor_heatmap(lang_locs, ancestral_locations)
 Now that we have run through a complete analysis, try the following tasks.
 
 * Plot heat maps for other nodes of the phylogeny. Can you make heat maps for the ancestors of Southern Quechua, Ecuadoriano, Chachapoyas, Central Quechua, and Yauyos?
-* Go back to BEAUti and run an analysis with a relaxed clock for location
+* Go back to BEAUti and run an analysis with a relaxed clock for location. Are there any noticeable differences in the results? Is a relaxed clock supported (check the coefficient of variation, see tutorial 1)
 * Try alternative values for the precision parameter. Remember that higher values constrain the amount of movement more.
 
 
