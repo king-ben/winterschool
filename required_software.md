@@ -25,7 +25,7 @@ Required packages: ORC, CCD, Babel, GEO_SPHERE
 
 ```r
 # Install packages
-install.packages(c("ggplot2","rnaturalearth","rnaturalearthdata", "BiocManager", "ape", "ggrepel"))
+install.packages(c("ggplot2","rnaturalearth","rnaturalearthdata", "BiocManager", "ape", "ggrepel", "tidyverse"))
 BiocManager::install("treeio")
 
 ```
