@@ -88,7 +88,7 @@ Let's first install the packages we need. Copy and paste the following code into
 
 ```r
 # Install packages
-install.packages(c("ggplot2","rnaturalearth","rnaturalearthdata", "BiocManager", "ape", "ggrepel"))
+install.packages(c("ggplot2","rnaturalearth","rnaturalearthdata", "BiocManager", "ape", "ggrepel", "tidyverse"))
 BiocManager::install("treeio")
 
 ```
