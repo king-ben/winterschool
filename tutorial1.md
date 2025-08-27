@@ -203,7 +203,7 @@ If any of the parameters do not have a high enough ESS, there are a number of st
 
 ### Resuming the analysis
 
-One possibility is just to run the analysis longer. To do this, go back to the BEAST2 app and load the same xml file. In the drop down menu immdiately underneath change from *default: only write new log files* to *resume: appends log to existing files (if any)*. The click run. This option continues the analysis from where it stopped, which is possible because all the details of the last point of the MCMC were stored in the *state file*
+One possibility is just to run the analysis longer. To do this, go back to the BEAST2 app and load the same xml file. In the drop down menu directly underneath, change *default: only write new log files* to *resume: appends log to existing files (if any)*. The click run. This option continues the analysis from where it stopped, which is possible because all the details of the last point of the MCMC were stored in the *state file*
 
 ### Changing operator settings
 
@@ -239,7 +239,7 @@ Open the **TreeAnnotator** app which comes with Beast2.
 
 ## Viewing the summary tree
 
-You can open the summary tree by going to the website [IcyTree](https://icytree.org/). Alterntaively, the summary tree can be viewed in FigTree. There are many options available to change the visualisation of the tree, such as colouring the branches or visuallising the range of possible dates for a node on the tree. To do the latter in IcyTree, click Style > node height error bars > height_95%HPD. 
+You can open the summary tree by going to the website [IcyTree](https://icytree.org/). Alternatively, the summary tree can be viewed in FigTree. There are many options available to change the visualisation of the tree, such as colouring the branches or visuallising the range of possible dates for a node on the tree. To do the latter in IcyTree, click Style > node height error bars > height_95%HPD. 
 
 ![](doc/icytree.png)
 
