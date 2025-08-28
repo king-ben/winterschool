@@ -152,8 +152,8 @@ root <- c("Apurimac", "Cuzco", "Maragua", "Pocona", "Curva", "Puno", "Taquile", 
 ancestral_locations <- ancestral_locations(t, clade=root, locationannotation="locationslocation")
 
 # make the heat map
-ancestor_heatmap(lang_locs, ancestral_locations)
-
+p1 <- ancestor_heatmap(lang_locs, ancestral_locations)
+print(p1)
 ```
 
 ![](doc/heatmap.jpeg)

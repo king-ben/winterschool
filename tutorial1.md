@@ -52,10 +52,6 @@ BEAST2 has a large number of add-on packages for performing various specialised 
 To install Babel through BEAUti, first add the extra repositories to the package manager like so:
 - start BEAUti, 
 - choose File/Manage packages
-- click ‘Package repositories’
-- Add URL https://raw.githubusercontent.com/CompEvol/CBAN/master/packages-extra.xml, click DONE
-
-Babel now appears in the list of packages
 - Select Babel
 - Click install
 
